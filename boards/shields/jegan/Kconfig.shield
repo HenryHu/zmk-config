@@ -1,7 +1,5 @@
-#config SHIELD_JEGAN_LEFT
-#    def_bool $(shields_list_contains,jegan_left)
-#
-#config SHIELD_JEGAN_RIGHT
-#    def_bool $(shields_list_contains,jegan_right)
-config SHIELD_JEGAN
-    def_bool $(shields_list_contains,jegan)
+config SHIELD_JEGAN_LEFT
+    def_bool $(shields_list_contains,jegan_left)
+
+config SHIELD_JEGAN_RIGHT
+    def_bool $(shields_list_contains,jegan_right)
