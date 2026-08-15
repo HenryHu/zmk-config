@@ -19,11 +19,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: jegan
+    shield: jegan_left
     snippet: zmk-usb-logging
-  #  - board: nice_nano_v2
-  #    shield: jegan_left
-  #    snippet: zmk-usb-logging
-  #  - board: nice_nano_v2
-  #    shield: jegan_right
-  #    snippet: zmk-usb-logging
+  - board: nice_nano_v2
+    shield: jegan_right
+    snippet: zmk-usb-logging
