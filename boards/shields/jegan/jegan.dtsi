@@ -5,11 +5,13 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 #include "jegan-layouts.dtsi"
+#include "jegan-pinctrl.dtsi"
 
 / {
     chosen {
         zmk,physical-layout = &default_layout;
         zmk,kscan = &kscan;
+        zmk,underglow = &led_strip;
     };
 
     kscan: kscan {
