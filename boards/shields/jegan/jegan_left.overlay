@@ -26,3 +26,7 @@
         , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // D14
         ;
 };
+
+&led_strip {
+  chain-length = <1>;
+};
