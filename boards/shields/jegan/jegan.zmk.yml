@@ -20,5 +20,4 @@ requires:
   - nice_nano
 
 siblings:
-  - jegan_left
-  - jegan_right
+  - jegan
