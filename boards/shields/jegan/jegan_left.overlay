@@ -39,12 +39,12 @@
 
 		/* SPI */
 		reg = <0>; /* ignored, but necessary for SPI bindings */
-		spi-max-frequency = <DT_FREQ_K(6400)>;
+		spi-max-frequency = <DT_FREQ_M(4)>;
 
 		/* WS2812 */
-		chain-length = <1>; /* arbitrary; change at will */
-		spi-one-frame = <0xfc>;
-		spi-zero-frame = <0xc0>;
+		chain-length = <38>; /* arbitrary; change at will */
+		spi-one-frame = <0x70>;
+		spi-zero-frame = <0x40>;
 
         color-mapping = <LED_COLOR_ID_GREEN
             LED_COLOR_ID_RED
