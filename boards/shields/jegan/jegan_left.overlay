@@ -57,14 +57,14 @@
 
 // Only used for I2C on left side.
 &pinctrl {
-  i2c1_default: i2c1_default {
+  i2c0_default: i2c0_default {
     group1 {
       psels = <NRF_PSEL(TWIM_SDA, 0, 8)>,
               <NRF_PSEL(TWIM_SCL, 0, 6)>;
     };
   };
 
-  i2c1_sleep: i2c1_sleep {
+  i2c0_sleep: i2c0_sleep {
     group1 {
       psels = <NRF_PSEL(TWIM_SDA, 0, 8)>,
               <NRF_PSEL(TWIM_SCL, 0, 6)>;
@@ -73,25 +73,25 @@
   };
 };
 
-&i2c1 {
+&i2c0 {
     status = "okay";
-    pinctrl-0 = <&i2c1_default>;
-    pinctrl-1 = <&i2c1_sleep>;
+    pinctrl-0 = <&i2c0_default>;
+    pinctrl-1 = <&i2c0_sleep>;
     pinctrl-names = "default", "sleep";
 
-        display: ssd1306@3c {
-            compatible = "solomon,ssd1306fb";
-            reg = <0x3c>;
-            width = <128>;
-            height = <32>;
-            segment-offset = <0>;
-            page-offset = <0>;
-            display-offset = <0>;
-            multiplex-ratio = <31>;
-            segment-remap;
-            com-invdir;
-            prechargep = <0x22>;
-        };
+    display: ssd1306@3d {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;
+        width = <128>;
+        height = <32>;
+        segment-offset = <0>;
+        page-offset = <0>;
+        display-offset = <0>;
+        multiplex-ratio = <31>;
+        segment-remap;
+        com-invdir;
+        prechargep = <0x22>;
+    };
 };
 
 / {
