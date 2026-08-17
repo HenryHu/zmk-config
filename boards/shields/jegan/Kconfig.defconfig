@@ -9,25 +9,25 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_DISPLAY
     default y
 
-config CONFIG_ZMK_DISPLAY_BLANK_ON_IDLE
+config ZMK_DISPLAY_BLANK_ON_IDLE
     default y
 
-config ONFIG_ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN
+config ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN
     default y
 
-config ONFIG_ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
+config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
     default n
 
-config ONFIG_ZMK_DISPLAY_WORK_QUEUE_DEDICATED
+config ZMK_DISPLAY_WORK_QUEUE_DEDICATED
     default y
 
-config ONFIG_ZMK_WIDGET_OUTPUT_STATUS
+config ZMK_WIDGET_OUTPUT_STATUS
     default y
 
-config CONFIG_ZMK_WIDGET_LAYER_STATUS
+config ZMK_WIDGET_LAYER_STATUS
     default y
 
-config CONFIG_ZMK_WIDGET_BATTERY_STATUS
+config ZMK_WIDGET_BATTERY_STATUS
     default y
 
 endif # SHIELD_JEGAN_LEFT
@@ -36,6 +36,30 @@ if SHIELD_JEGAN_LEFT || SHIELD_JEGAN_RIGHT
 
 config ZMK_SPLIT
     default y
+
+config ZMK_RGB_UNDERGLOW
+    default y
+
+config ZMK_RGB_UNDERGLOW_AUTO_OFF_USB
+    default y
+
+config ZMK_RGB_UNDERGLOW_ON_START
+    default y
+
+config ZMK_RGB_UNDERGLOW_EFF_START
+    default 2
+
+config LED_STRIP
+    default y
+
+config WS2812_STRIP
+    default y
+
+config WS2812_STRIP_SPI
+    default y
+
+config ZMK_RGB_UNDERGLOW_BRT_START
+    default 20
 
 if ZMK_DISPLAY
 
