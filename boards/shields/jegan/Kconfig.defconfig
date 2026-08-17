@@ -13,7 +13,15 @@ if SHIELD_JEGAN_LEFT || SHIELD_JEGAN_RIGHT
 config ZMK_SPLIT
     default y
 
-endif # SHIELD_JEGAN_LEFT || SHIELD_JEGAN_RIGHT
+if ZMK_DISPLAY
+
+config I2C
+    default y
+
+config SSD1306
+    default y
+
+endif
 
 if LVGL
 
@@ -32,3 +40,5 @@ choice LV_COLOR_DEPTH
 endchoice
 
 endif # LVGL
+
+endif # SHIELD_JEGAN_LEFT || SHIELD_JEGAN_RIGHT
