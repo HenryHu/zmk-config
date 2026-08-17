@@ -6,6 +6,30 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_DISPLAY
+    default y
+
+config CONFIG_ZMK_DISPLAY_BLANK_ON_IDLE
+    default y
+
+config ONFIG_ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN
+    default y
+
+config ONFIG_ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
+    default n
+
+config ONFIG_ZMK_DISPLAY_WORK_QUEUE_DEDICATED
+    default y
+
+config ONFIG_ZMK_WIDGET_OUTPUT_STATUS
+    default y
+
+config CONFIG_ZMK_WIDGET_LAYER_STATUS
+    default y
+
+config CONFIG_ZMK_WIDGET_BATTERY_STATUS
+    default y
+
 endif # SHIELD_JEGAN_LEFT
 
 if SHIELD_JEGAN_LEFT || SHIELD_JEGAN_RIGHT
