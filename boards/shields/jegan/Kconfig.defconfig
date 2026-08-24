@@ -63,17 +63,11 @@ config ZMK_PM_SOFT_OFF
     default y
 
 config ZMK_IDLE_SLEEP_TIMEOUT
-    default 31000
+    default 300000
 
 #### Display settings
 
 if ZMK_DISPLAY
-
-config I2C
-    default y
-
-config SSD1306
-    default y
 
 # Do not turn off ext-power of there's a display, as display
 # also relies on that. Otherwise, we can turn ext-power off
