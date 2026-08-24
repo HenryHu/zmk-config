@@ -25,6 +25,7 @@
         // files to (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) and the row-gpios here to
         // GPIO_ACTIVE_HIGH.
         diode-direction = "col2row";
+        wakeup-source;
     };
 
     soft_off_wakers {
