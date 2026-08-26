@@ -52,6 +52,8 @@
             LED_COLOR_ID_RED
             LED_COLOR_ID_BLUE
             >;
+
+        supply-gpios = <&gpio1 7 GPIO_ACTIVE_LOW>;
 	};
 };
 
