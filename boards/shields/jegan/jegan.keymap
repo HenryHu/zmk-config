@@ -17,23 +17,23 @@
         default_layer {
             display-name = "base";
             bindings = <
-                &kp ESC        &kp F1   &kp F2 &kp F3   &kp F4 &kp F5 &kp F6      &kp F7 &kp F8    &kp F9   &kp F10   &kp F11   &kp F12   &kp PSCRN &kp DEL
-                &kp GRAVE      &kp N1   &kp N2 &kp N3   &kp N4 &kp N5 &kp N6      &kp N7 &kp N8    &kp N9   &kp N0    &kp MINUS &kp EQUAL &kp BSPC  &kp HOME
-                &kp TAB        &kp Q    &kp W  &kp E    &kp R  &kp T        &kp Y &kp U  &kp I     &kp O    &kp P     &kp LBKT  &kp RBKT  &kp BSLH  &kp END
-                &mt RCTRL ESC  &kp A    &kp S  &kp D    &kp F  &kp G        &kp H &kp J  &kp K     &kp L    &kp SEMI  &kp SQT   &kp RET             &kp PG_UP
-                &kp LSHFT      &kp Z    &kp X  &kp C    &kp V  &kp B        &kp N &kp M  &kp COMMA &kp DOT  &kp FSLH  &kp UP                        &kp PG_DN
-                &mt LCTRL C_PP &kp LGUI &mo 1  &kp LALT &kp SPACE           &kp SPACE    &kp RALT  &mo 2    &kp LEFT  &kp DOWN  &kp RIGHT           &kp INS
+                &kp ESC        &kp F1   &kp F2     &kp F3   &kp F4 &kp F5 &kp F6      &kp F7 &kp F8    &kp F9      &kp F10   &kp F11   &kp F12   &kp PSCRN &kp DEL
+                &kp GRAVE      &kp N1   &kp N2     &kp N3   &kp N4 &kp N5 &kp N6      &kp N7 &kp N8    &kp N9      &kp N0    &kp MINUS &kp EQUAL &kp BSPC  &kp HOME
+                &kp TAB        &kp Q    &kp W      &kp E    &kp R  &kp T        &kp Y &kp U  &kp I     &kp O       &kp P     &kp LBKT  &kp RBKT  &kp BSLH  &kp END
+                &mt RCTRL ESC  &kp A    &kp S      &kp D    &kp F  &kp G        &kp H &kp J  &kp K     &kp L       &kp SEMI  &kp SQT   &kp RET             &kp PG_UP
+                &kp LSHFT      &kp Z    &kp X      &kp C    &kp V  &kp B        &kp N &kp M  &kp COMMA &kp DOT     &kp FSLH  &kp UP                        &kp PG_DN
+                &mt LCTRL C_PP &kp LGUI &lt 1 LGUI &kp LALT &kp SPACE           &kp SPACE    &kp RALT  &lt 2 RCTRL &kp LEFT  &kp DOWN  &kp RIGHT           &kp INS
             >;
         };
 
         upper_layer {
             display-name = "upper";
             bindings = <
-                &kp LC(LS(ESC)) &kp C_BRI_DN    &kp C_BRI_UP    &kp F3     &kp F4     &kp F5   &kp F6          &kp F7       &kp F8       &kp F9        &kp F10   &kp F11   &kp F12   &kp PSCRN &kp INS
+                &kp LC(LS(ESC)) &bt BT_SEL 0    &bt BT_SEL 1    &kp F3     &kp F4     &kp F5   &kp F6          &kp F7       &kp F8       &kp F9        &kp F10   &kp F11   &kp F12   &kp PSCRN &kp INS
                 &kp GRAVE       &kp F1          &kp F2          &kp F3     &kp F4     &kp F5   &kp F6          &kp F7       &kp F8       &kp F9        &kp F10   &kp F11   &kp F12   &kp BSPC  &kp C_SLEEP
                 &kp TAB         &rgb_ug RGB_TOG &rgb_ug RGB_EFF &kp LG(E)  &kp LG(R)  &bootloader  &bootloader &kp U        &kp I        &out OUT_TOG  &ext_power EP_TOG &kp LBKT  &kp RBKT  &kp BSLH  &kp HOME
                 &kp RCTRL       &kp A           &kp S           &kp D      &kp F      &kp G        &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT    &kp SEMI  &kp SQT   &kp RET             &kp PG_UP
-                &kp LS(INS)     &kp Z           &kp X           &bt BT_CLR &sys_reset &bt BT_PRV   &bt BT_NXT  &kp C_MUTE   &kp COMMA    &kp DOT       &kp FSLH  &kp UP                        &kp PG_DN
+                &kp LS(INS)     &kp C_BRI_DEC   &kp C_BRI_INC   &bt BT_CLR &sys_reset &bt BT_PRV   &bt BT_NXT  &kp C_MUTE   &kp COMMA    &kp DOT       &kp FSLH  &kp UP                        &kp PG_DN
                 &mt LCTRL C_PP  &kp LGUI        &mo 1           &kp LALT   &soft_off               &kp SPACE               &kp RALT     &mo 2         &kp LEFT  &kp DOWN  &kp RIGHT           &kp DEL
             >;
         };
