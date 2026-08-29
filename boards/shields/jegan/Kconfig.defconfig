@@ -62,9 +62,6 @@ config ZMK_SLEEP
 config ZMK_PM_SOFT_OFF
     default y
 
-config ZMK_IDLE_SLEEP_TIMEOUT
-    default 300000
-
 #### Display settings
 
 if ZMK_DISPLAY
