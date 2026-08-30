@@ -7,6 +7,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include "macros.dtsi"
 
 / {
     // Define a default keymap here.
@@ -29,12 +30,12 @@
         upper_layer {
             display-name = "upper";
             bindings = <
-                &kp LC(LS(ESC)) &bt BT_SEL 0    &bt BT_SEL 1    &kp F3     &kp F4     &kp F5   &kp F6          &kp F7       &kp F8       &kp F9        &kp F10   &kp F11   &kp F12   &kp PSCRN &kp INS
-                &kp GRAVE       &kp F1          &kp F2          &kp F3     &kp F4     &kp F5   &kp F6          &kp F7       &kp F8       &kp F9        &kp F10   &kp F11   &kp F12   &kp BSPC  &kp C_SLEEP
-                &kp TAB         &rgb_ug RGB_TOG &rgb_ug RGB_EFF &kp LG(E)  &kp LG(R)  &bootloader  &bootloader &kp U        &kp I        &out OUT_TOG  &ext_power EP_TOG &kp LBKT  &kp RBKT  &kp BSLH  &kp HOME
-                &kp RCTRL       &kp A           &kp S           &kp D      &kp F      &kp G        &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT    &kp SEMI  &kp SQT   &kp RET             &kp PG_UP
-                &kp LS(INS)     &kp C_BRI_DEC   &kp C_BRI_INC   &bt BT_CLR &sys_reset &bt BT_PRV   &bt BT_NXT  &kp C_MUTE   &kp COMMA    &kp DOT       &kp FSLH  &kp UP                        &kp PG_DN
-                &mt LCTRL C_PP  &kp LGUI        &mo 1           &kp LALT   &soft_off               &kp SPACE               &kp RALT     &mo 2         &kp LEFT  &kp DOWN  &kp RIGHT           &kp DEL
+                &kp LC(LS(ESC)) &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2 &kp F4     &kp F5  &kp F6             &kp F7       &kp F8       &kp F9       &kp PAUSE_BREAK   &kp F11   &kp F12  &kp SYSREQ &kp INS
+                &kp GRAVE       &kp F1          &kp F2        &kp F3       &kp F4     &kp F5  &kp F6             &kp F7       &kp F8       &kp F9       &kp F10           &kp F11   &kp F12  &kp BSPC   &kp C_PWR
+                &rgb_ug RGB_EFF &rgb_ug RGB_TOG &kp W         &kp LG(E)    &kp LG(R)  &bootloader    &bootloader &kp U        &kp I        &out OUT_TOG &ext_power EP_TOG &kp HOME  &kp END  &kp BSLH   &kp C_AL_LOCK
+                &macro1         &kp A           &kp S         &kp D        &kp F      &kp G          &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT   &kp SEMI          &kp SQT   &kp RET2            &kp PG_UP
+                &kp LS(INS)     &kp C_BRI_DEC   &kp C_BRI_INC &bt BT_CLR   &sys_reset &bt BT_PRV     &bt BT_NXT  &kp C_MUTE   &kp PG_UP    &kp PG_DN    &kp CLEAR         &kp UP                        &kp PG_DN
+                &mt LCTRL C_PP  &kp LGUI        &mo 1         &kp LALT     &soft_off                 &kp SPACE                &kp K_CMENU  &mo 2        &kp LEFT          &kp DOWN  &kp RIGHT           &kp DEL
             >;
         };
     };
