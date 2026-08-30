@@ -1,0 +1,11 @@
+/ {
+    macros {
+        macro1: macro1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp E &kp X &kp P>
+                ;
+        };
+    };
+};
